@@ -6,7 +6,7 @@ const { open } = require("sqlite");
 let db;
 const dbPath = path.join(__dirname, "../db/parcel.db");
 
-const initializeDb = async () => {
+const initializeDb = async () => {       //initializing database
     try {
         db = await open({
             filename: dbPath,
