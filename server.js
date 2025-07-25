@@ -5,7 +5,7 @@ const parcelRoutes  = require("./parcel/parcelController")
 const app = express();
 app.use(express.json());
 
-// Mount parcel routes under /parcels
+// Mount parcel routes under /
 
 app.use("/", parcelRoutes);
 

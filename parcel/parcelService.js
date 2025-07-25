@@ -50,7 +50,7 @@ const deleteParcel = async (id) => {
 
   const db = getDb();
   try{
-    await db.run(`DELETE FROM parcels WHERE id = ${id};`, [id]);
+    await db.run(`DELETE FROM parcels WHERE id = ?;`, [id]);
   }catch(err){
     console.log("db Error", err.message)
   }
