@@ -3,6 +3,8 @@ const router = express.Router();
 const parcelService = require("./parcelService");
 const {createParcel, updateParcel, deleteParcel} = require('./parcelService');
 
+//get api
+
 router.get("/parcels/", async (request, response) => {
   
     try{
